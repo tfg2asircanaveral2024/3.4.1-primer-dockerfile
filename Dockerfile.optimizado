@@ -1,0 +1,8 @@
+FROM ubuntu
+
+# al crear el contenedor, se ejecuta el script
+ENTRYPOINT /script.sh
+
+WORKDIR /
+COPY script.sh .
+RUN chmod u+x script.sh
